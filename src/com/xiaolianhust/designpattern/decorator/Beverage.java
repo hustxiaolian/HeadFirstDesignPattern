@@ -23,7 +23,11 @@ public abstract class Beverage {
 	protected void setSize(SIZE size) {
 		this.size = size;
 	}
-
+	
+	protected double getCupCost() {
+		return getSize().price;
+	}
+	
 	protected String getDescription() {
 		return description + "(" + getSize() + ")";
 	}
